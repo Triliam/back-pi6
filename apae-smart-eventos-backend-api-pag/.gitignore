@@ -1,0 +1,5 @@
+node_modules/
+secrets/*
+!/secrets/.gitkeep
+cloud-sql-proxy.exe
+.env

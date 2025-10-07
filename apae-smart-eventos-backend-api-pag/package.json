@@ -1,0 +1,31 @@
+{
+  "name": "apae-smart-eventos-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "gcloud-proxy:start": "cloud-sql-proxy bold-crow-460315-q8:southamerica-east1:apae-smart-eventos --credentials-file=./secrets/google-cloud-service-account.json --port=3306",
+    "gcloud-new-proxy:start": "cloud-sql-proxy mobile-qrcode:southamerica-east1:smart-eventos --credentials-file=./secrets/gcloud-service-account-new.json --port=3306"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^7.16.0",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^16.6.1",
+    "express": "~4.16.1",
+    "express-validator": "^7.2.1",
+    "handlebars": "^4.7.8",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "~1.9.1",
+    "mysql2": "^3.14.1",
+    "nodemon": "^3.1.10",
+    "puppeteer": "^24.10.0",
+    "qrcode": "^1.5.4",
+    "stripe": "^19.1.0",
+    "uuid": "^11.1.0"
+  }
+}

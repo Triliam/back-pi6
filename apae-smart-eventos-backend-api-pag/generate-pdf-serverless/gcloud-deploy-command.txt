@@ -1,0 +1,1 @@
+gcloud run deploy generate-ticket-pdf --source . --platform managed --region southamerica-east1 --memory 1Gi --allow-unauthenticated
